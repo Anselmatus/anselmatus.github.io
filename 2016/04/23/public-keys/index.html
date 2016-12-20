@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Philippe-Anselme Foury</title>
+  <title>Public Keys | Philippe-Anselme Foury</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="mtwabp.fr - Public SSH CA CertificateThe mtwabp.fr network uses SSH certificates to prove the identity of the hosts you can SSH into. For this to work, you’ll have to add the public key of that certif">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://anselme.foury.free.fr/2016/04/23/hello-world/index.html">
+<meta property="og:title" content="Public Keys">
+<meta property="og:url" content="http://anselme.foury.free.fr/2016/04/23/public-keys/index.html">
 <meta property="og:site_name" content="Philippe-Anselme Foury">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-04-22T23:44:41.000Z">
+<meta property="og:description" content="mtwabp.fr - Public SSH CA CertificateThe mtwabp.fr network uses SSH certificates to prove the identity of the hosts you can SSH into. For this to work, you’ll have to add the public key of that certif">
+<meta property="og:updated_time" content="2016-12-20T18:06:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="Public Keys">
+<meta name="twitter:description" content="mtwabp.fr - Public SSH CA CertificateThe mtwabp.fr network uses SSH certificates to prove the identity of the hosts you can SSH into. For this to work, you’ll have to add the public key of that certif">
 <meta name="twitter:creator" content="@http://twitter.com/anselmatus">
   
     <link rel="alternate" href="/atom.xml" title="Philippe-Anselme Foury" type="application/atom+xml">
@@ -32,7 +29,7 @@ Quick">
     <body>
   
       <div id="container" class="container">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-public-keys" class="article article-type-post" itemscope itemprop="blogPost">
   <header id="header" class="header">
   <nav id="main-nav" class="main-nav">
     
@@ -72,7 +69,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Public Keys
     </h1>
   
 
@@ -80,15 +77,10 @@ Quick">
     
     <div class="article-entry typo" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="mtwabp-fr-Public-SSH-CA-Certificate"><a href="#mtwabp-fr-Public-SSH-CA-Certificate" class="headerlink" title="mtwabp.fr - Public SSH CA Certificate"></a>mtwabp.fr - Public SSH CA Certificate</h2><p>The <a href="mtwabp.fr">mtwabp.fr</a> network uses SSH certificates to prove the identity of the hosts you can SSH into. For this to work, you’ll have to add the public key of that certificate authority to your <code>~/.ssh/known_hosts</code> file. The new entry would need to look like this:</p>
+<blockquote>
+<p><code>@cert-authority mtwabp.fr,*.mtwabp.fr ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5E5k1H4rmlVjO/TrgEyeWJuRTSmmCWfH92jhNNKmC02YXtmCL3hWExYYonWKwg27x+NLgygAejTCeuoIG23NfH/S0lv8ozHayHJH+nFEHYonmPks40NtA3aMfFLbh35cuMBhz1d1EhqJYh859dTkhTuyDctXtrAv6WruHIQ4WFYEeXY6PIhS9qd48Zu+pXvbTrK8608EE7Qb+P+ey9dRzrvfkLjyUF5EpCtWzIsCuSL7gGjA5PTIiuNckjBZeu+Fp8e9gbT7QxDVb9FTsACqk1B2o+IMmy8JIMEKARDALAnDFs/ZgOGfSSCo3G+GedlnyC8JzaW80jQfpDH6UZsYpIEpEL9LADlupzbu7YuTWU2a1eeYNtQdEQRID0WnRig3F6cubwtuMM5870tyvTS8lDq+MImhHCgYm/0KDamUxSEr/NJfBRwjhGdjZSEsHInCssY0VXYrYg3sENpcNhSl3jQbxauL2PELN0J9hsrYeiazvgRYS+1lpZmRHjUHgiDMbLygIQUwVLPS0+jP8DjD8aKxgan5x1KcNJgqFAf/N8OvpYIk5WYImHbJlaHs337FHdgg6C8pOvUxymlyx+rPL+eej6+O4KyBoxUntgOawiAUy7WAiG8YDmy2M6BrcBbSXnznFgKT7d+MxhhYbH5a97KlB7rbkqtoVyt4oilmMiQ== CA key for mtwapb.fr</code></p>
+</blockquote>
 
       
     </div>
@@ -96,7 +88,7 @@ Quick">
       <ul class="article-meta">
         <li>
           <span class="label">Published Date:</span>
-          <a href="/2016/04/23/hello-world/" class="article-date">
+          <a href="/2016/04/23/public-keys/" class="article-date">
   <time datetime="2016-04-22T23:44:41.000Z" itemprop="datePublished">2016-04-23</time>
 </a>
 
@@ -111,13 +103,17 @@ Quick">
     
 <nav id="article-nav" class="article-nav">
   
-    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
-  
-  
-    <a href="/2016/04/23/public-keys/" id="article-nav-older" class="article-nav-link-wrap older">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Public Keys</div>
+    <a href="/2016/04/23/hello-world/" id="article-nav-newer" class="article-nav-link-wrap newer">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
     </a>
+  
+  
+    <span id="article-nav-older" class="article-nav-link-wrap older"></span>
   
 </nav>
 
@@ -149,7 +145,7 @@ Quick">
   <script>
    var disqus_shortname = 'paf-perso';
    
-   var disqus_url = 'http://anselme.foury.free.fr/2016/04/23/hello-world/';
+   var disqus_url = 'http://anselme.foury.free.fr/2016/04/23/public-keys/';
    
    (function(){
      var dsq = document.createElement('script');
