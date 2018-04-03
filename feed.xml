@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Philippe-Anselme logs</title>
+    <description>:rocket: mtwabp</description>
+    <link>https://anselmatus.github.com/</link>
+    <atom:link href="https://anselmatus.github.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 03 Apr 2018 23:33:25 +0200</pubDate>
+    <lastBuildDate>Tue, 03 Apr 2018 23:33:25 +0200</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>gpg public key</title>
+        <description>&lt;p&gt;I’ve recently created myself a GPG key to encrypt my emails.&lt;/p&gt;
+
+&lt;p&gt;Here is &lt;a href=&quot;https://mtwabp.fr/assets/D084FAAE.asc&quot;&gt;it&lt;/a&gt;. You can also download it from &lt;a href=&quot;https://keybase.io/anselmatus&quot;&gt;Keybase&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Send me some email. I’ll be happy to read from you!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 Apr 2018 20:28:59 +0200</pubDate>
+        <link>https://anselmatus.github.com/2018/04/02/gpg-public-key/</link>
+        <guid isPermaLink="true">https://anselmatus.github.com/2018/04/02/gpg-public-key/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Projet Wagon-Louffe</title>
+        <description>&lt;p&gt;Mes amis aiment bien faire des vidéos lorsqu’ils sont en vacances.&lt;/p&gt;
+
+&lt;p&gt;De mon côté j’aime bien mettre en avant leurs initiatives. Alors j’ai repensé la communication autour de leur projet en mettant une pointe d’imagination.&lt;/p&gt;
+
+&lt;p&gt;Le résultat est disponible &lt;a href=&quot;https://wagon-louffe.fr&quot;&gt;ici&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le site est auto-hébergé et dispose d’un certificat Let’s Encrypt pour toujours plus de sécurité.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 May 2016 20:28:59 +0200</pubDate>
+        <link>https://anselmatus.github.com/2016/05/25/site-wagon-louffe/</link>
+        <guid isPermaLink="true">https://anselmatus.github.com/2016/05/25/site-wagon-louffe/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>mtwabp public keys</title>
+        <description>&lt;h2 id=&quot;public-ssh-ca-certificate&quot;&gt;Public SSH CA Certificate&lt;/h2&gt;
+
+&lt;p&gt;The &lt;em&gt;mtwabp.fr&lt;/em&gt; machines’ SSH host keys are signed with a certificates. It makes easier to prove the identity of the hosts you are connecting to. The SSH public certificate is:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5E5
+k1H4rmlVjO/TrgEyeWJuRTSmmCWfH92jhNNKmC02YXtm
+CL3hWExYYonWKwg27x+NLgygAejTCeuoIG23NfH/S0lv
+8ozHayHJH+nFEHYonmPks40NtA3aMfFLbh35cuMBhz1d
+1EhqJYh859dTkhTuyDctXtrAv6WruHIQ4WFYEeXY6PIh
+S9qd48Zu+pXvbTrK8608EE7Qb+P+ey9dRzrvfkLjyUF5
+EpCtWzIsCuSL7gGjA5PTIiuNckjBZeu+Fp8e9gbT7QxD
+Vb9FTsACqk1B2o+IMmy8JIMEKARDALAnDFs/ZgOGfSSC
+o3G+GedlnyC8JzaW80jQfpDH6UZsYpIEpEL9LADlupzb
+u7YuTWU2a1eeYNtQdEQRID0WnRig3F6cubwtuMM5870t
+yvTS8lDq+MImhHCgYm/0KDamUxSEr/NJfBRwjhGdjZSE
+sHInCssY0VXYrYg3sENpcNhSl3jQbxauL2PELN0J9hsr
+YeiazvgRYS+1lpZmRHjUHgiDMbLygIQUwVLPS0+jP8Dj
+D8aKxgan5x1KcNJgqFAf/N8OvpYIk5WYImHbJlaHs337
+FHdgg6C8pOvUxymlyx+rPL+eej6+O4KyBoxUntgOawiA
+Uy7WAiG8YDmy2M6BrcBbSXnznFgKT7d+MxhhYbH5a97K
+lB7rbkqtoVyt4oilmMiQ== CA key for mtwapb.fr&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For this to work, you’ll have to add the SSH certificate to your ~/.ssh/known_hosts file. The new entry would should be something like his:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;@cert-authority mtwabp.fr,*.mtwabp.fr
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5E5k1
+H4rmlVjO/TrgEyeWJuRTSmmCWfH92jhNNKmC02YXtmCL
+3hWExYYonWKwg27x+NLgygAejTCeuoIG23NfH/S0lv8o
+zHayHJH+nFEHYonmPks40NtA3aMfFLbh35cuMBhz1d1E
+hqJYh859dTkhTuyDctXtrAv6WruHIQ4WFYEeXY6PIhS9
+qd48Zu+pXvbTrK8608EE7Qb+P+ey9dRzrvfkLjyUF5Ep
+CtWzIsCuSL7gGjA5PTIiuNckjBZeu+Fp8e9gbT7QxDVb
+9FTsACqk1B2o+IMmy8JIMEKARDALAnDFs/ZgOGfSSCo3
+G+GedlnyC8JzaW80jQfpDH6UZsYpIEpEL9LADlupzbu7
+YuTWU2a1eeYNtQdEQRID0WnRig3F6cubwtuMM5870tyv
+TS8lDq+MImhHCgYm/0KDamUxSEr/NJfBRwjhGdjZSEsH
+InCssY0VXYrYg3sENpcNhSl3jQbxauL2PELN0J9hsrYe
+iazvgRYS+1lpZmRHjUHgiDMbLygIQUwVLPS0+jP8DjD8
+aKxgan5x1KcNJgqFAf/N8OvpYIk5WYImHbJlaHs337FH
+dgg6C8pOvUxymlyx+rPL+eej6+O4KyBoxUntgOawiAUy
+7WAiG8YDmy2M6BrcBbSXnznFgKT7d+MxhhYbH5a97KlB
+7rbkqtoVyt4oilmMiQ== CA key for mtwapb.fr&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This certificate can also be put in your servers if you want me to be able to connect to them.&lt;/p&gt;
+
+&lt;h2 id=&quot;public-ssh-krypto-dns&quot;&gt;Public SSH krypto DNS&lt;/h2&gt;
+
+&lt;p&gt;My current &lt;strong&gt;krypto&lt;/strong&gt; public SSH key is available as follow and also as a DNS record at sshkey.kr.mtwabp.fr. More insigtht &lt;a href=&quot;&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINRGmf
+kvWf+wal/EpcLIex4GsdC9IFd8a3lilCMshQ2h anselmatus@protonmail.com&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To access the public key, you can use the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dig TXT sshkey.kr.mtwabp.fr +short&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 Apr 2016 20:28:59 +0200</pubDate>
+        <link>https://anselmatus.github.com/2016/04/23/mtwabp-public-key/</link>
+        <guid isPermaLink="true">https://anselmatus.github.com/2016/04/23/mtwabp-public-key/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>mtwabp public keys</title>
+  <meta name="description" content="Public SSH CA Certificate">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,700|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+  
+  <link rel="icon" href="/assets/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://anselmatus.github.com/2016/04/23/mtwabp-public-key/">
+  <link rel="alternate" type="application/rss+xml" title="Philippe-Anselme logs" href="https://anselmatus.github.com/feed.xml">
+</head>
+
+
+  <body>
+    <div class="site-wrap">
+      <header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="https://anselmatus.github.com/">Philippe-Anselme logs</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+
+        <a href="/feed.xml" class="page-link">RSS</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+      <div class="page-content">
+        <div class="wrapper">
+          <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">mtwabp public keys</h1>
+    <p class="post-meta"><time datetime="2016-04-23T20:28:59+02:00" itemprop="datePublished">April 23, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="public-ssh-ca-certificate">Public SSH CA Certificate</h2>
+
+<p>The <em>mtwabp.fr</em> machines’ SSH host keys are signed with a certificates. It makes easier to prove the identity of the hosts you are connecting to. The SSH public certificate is:</p>
+
+<blockquote>
+  <p>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5E5
+k1H4rmlVjO/TrgEyeWJuRTSmmCWfH92jhNNKmC02YXtm
+CL3hWExYYonWKwg27x+NLgygAejTCeuoIG23NfH/S0lv
+8ozHayHJH+nFEHYonmPks40NtA3aMfFLbh35cuMBhz1d
+1EhqJYh859dTkhTuyDctXtrAv6WruHIQ4WFYEeXY6PIh
+S9qd48Zu+pXvbTrK8608EE7Qb+P+ey9dRzrvfkLjyUF5
+EpCtWzIsCuSL7gGjA5PTIiuNckjBZeu+Fp8e9gbT7QxD
+Vb9FTsACqk1B2o+IMmy8JIMEKARDALAnDFs/ZgOGfSSC
+o3G+GedlnyC8JzaW80jQfpDH6UZsYpIEpEL9LADlupzb
+u7YuTWU2a1eeYNtQdEQRID0WnRig3F6cubwtuMM5870t
+yvTS8lDq+MImhHCgYm/0KDamUxSEr/NJfBRwjhGdjZSE
+sHInCssY0VXYrYg3sENpcNhSl3jQbxauL2PELN0J9hsr
+YeiazvgRYS+1lpZmRHjUHgiDMbLygIQUwVLPS0+jP8Dj
+D8aKxgan5x1KcNJgqFAf/N8OvpYIk5WYImHbJlaHs337
+FHdgg6C8pOvUxymlyx+rPL+eej6+O4KyBoxUntgOawiA
+Uy7WAiG8YDmy2M6BrcBbSXnznFgKT7d+MxhhYbH5a97K
+lB7rbkqtoVyt4oilmMiQ== CA key for mtwapb.fr</p>
+</blockquote>
+
+<p>For this to work, you’ll have to add the SSH certificate to your ~/.ssh/known_hosts file. The new entry would should be something like his:</p>
+
+<blockquote>
+  <p>@cert-authority mtwabp.fr,*.mtwabp.fr
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5E5k1
+H4rmlVjO/TrgEyeWJuRTSmmCWfH92jhNNKmC02YXtmCL
+3hWExYYonWKwg27x+NLgygAejTCeuoIG23NfH/S0lv8o
+zHayHJH+nFEHYonmPks40NtA3aMfFLbh35cuMBhz1d1E
+hqJYh859dTkhTuyDctXtrAv6WruHIQ4WFYEeXY6PIhS9
+qd48Zu+pXvbTrK8608EE7Qb+P+ey9dRzrvfkLjyUF5Ep
+CtWzIsCuSL7gGjA5PTIiuNckjBZeu+Fp8e9gbT7QxDVb
+9FTsACqk1B2o+IMmy8JIMEKARDALAnDFs/ZgOGfSSCo3
+G+GedlnyC8JzaW80jQfpDH6UZsYpIEpEL9LADlupzbu7
+YuTWU2a1eeYNtQdEQRID0WnRig3F6cubwtuMM5870tyv
+TS8lDq+MImhHCgYm/0KDamUxSEr/NJfBRwjhGdjZSEsH
+InCssY0VXYrYg3sENpcNhSl3jQbxauL2PELN0J9hsrYe
+iazvgRYS+1lpZmRHjUHgiDMbLygIQUwVLPS0+jP8DjD8
+aKxgan5x1KcNJgqFAf/N8OvpYIk5WYImHbJlaHs337FH
+dgg6C8pOvUxymlyx+rPL+eej6+O4KyBoxUntgOawiAUy
+7WAiG8YDmy2M6BrcBbSXnznFgKT7d+MxhhYbH5a97KlB
+7rbkqtoVyt4oilmMiQ== CA key for mtwapb.fr</p>
+</blockquote>
+
+<p>This certificate can also be put in your servers if you want me to be able to connect to them.</p>
+
+<h2 id="public-ssh-krypto-dns">Public SSH krypto DNS</h2>
+
+<p>My current <strong>krypto</strong> public SSH key is available as follow and also as a DNS record at sshkey.kr.mtwabp.fr. More insigtht <a href="">here</a></p>
+
+<blockquote>
+  <p>ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINRGmf
+kvWf+wal/EpcLIex4GsdC9IFd8a3lilCMshQ2h anselmatus@protonmail.com</p>
+</blockquote>
+
+<p>To access the public key, you can use the following:</p>
+
+<p><code class="highlighter-rouge">dig TXT sshkey.kr.mtwabp.fr +short</code></p>
+
+  </div>
+
+</article>
+
+        </div>
+      </div>
+
+      <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <div class="social-media-list">
+          
+            <a href="mailto:anselme.foury@gmail.com">Email</a>
+          
+
+          
+            <a href="https://linkedin.com/in/pafoury">Linkedin</a>
+          
+
+          
+            <a href="https://github.com/anselmatus">Github</a>
+          
+
+          
+            <a href="https://twitter.com/anselmatus">Twitter</a>
+          
+
+        </div>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <p>🖖</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+
+</html>
