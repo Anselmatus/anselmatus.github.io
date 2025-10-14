@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Philippe-Anselme Foury</copyright>
-    <lastBuildDate>Fri, 10 Oct 2025 22:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Oct 2025 19:00:00 +0000</lastBuildDate>
     <atom:link href="https://mtwabp.fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Website</title>
+      <link>https://mtwabp.fr/tags/website/</link>
+      <pubDate>Tue, 14 Oct 2025 19:00:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/tags/website/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Vélo</title>
       <link>https://mtwabp.fr/tags/v%C3%A9lo/</link>
@@ -364,13 +371,6 @@
       <link>https://mtwabp.fr/tags/hobby/</link>
       <pubDate>Wed, 25 May 2016 13:28:59 -0500</pubDate>
       <guid>https://mtwabp.fr/tags/hobby/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Website</title>
-      <link>https://mtwabp.fr/tags/website/</link>
-      <pubDate>Wed, 25 May 2016 13:28:59 -0500</pubDate>
-      <guid>https://mtwabp.fr/tags/website/</guid>
       <description></description>
     </item>
   </channel>
