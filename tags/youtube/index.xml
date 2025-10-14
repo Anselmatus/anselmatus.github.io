@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Youtube on Philippe-Anselme logs</title>
+    <link>https://mtwabp.fr/tags/youtube/</link>
+    <description>Recent content in Youtube on Philippe-Anselme logs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Philippe-Anselme Foury</copyright>
+    <lastBuildDate>Sat, 28 Dec 2024 23:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mtwabp.fr/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An Unfiltered Conversation with Linus Tech Tips</title>
+      <link>https://mtwabp.fr/posts/2024-12-28_an-unfiltered-conversation-with-linus-tech-tips/</link>
+      <pubDate>Sat, 28 Dec 2024 23:00:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/posts/2024-12-28_an-unfiltered-conversation-with-linus-tech-tips/</guid>
+      <description>&lt;p&gt;Si vous avez &lt;del&gt;cinq minutes&lt;/del&gt; deux heures devant vous, je vous conseille cette &lt;a href=&#34;https://www.youtube.com/watch?v=nmNzEf7dXsw&#34;&gt;vidéo&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;My take away:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;« Why I’m keep doing it? »&lt;/li&gt;&#xA;&lt;li&gt;« Sometimes it’s not obvious to me what’s not obvious »&lt;/li&gt;&#xA;&lt;li&gt;« When I give you an assignment, I expect some kind of follow up. »&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Youtube sans pub ? #2</title>
+      <link>https://mtwabp.fr/posts/2023-09-26_youtube-sans-pub--2/</link>
+      <pubDate>Tue, 26 Sep 2023 22:00:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/posts/2023-09-26_youtube-sans-pub--2/</guid>
+      <description>&lt;p&gt;Nouvelle technique pour regarder des vidéos Youtube sans pub : j&amp;rsquo;utilise maintenant le lecteur Youtube de l&amp;rsquo;application Telegram.&lt;/p&gt;&#xA;&lt;p&gt;Plutôt que mettre les vidéos que je souhaite voir dans &amp;ldquo;A regarder plus tard&amp;rdquo; de Youtube, je les partage sur dans la chaîne Telegram &amp;ldquo;Messages enregistrés&amp;rdquo;, et ensuite je les regarde depuis Telegram.&lt;/p&gt;&#xA;&lt;p&gt;Le lecteur intégré de Telegram permet même d&amp;rsquo;avoir le contrôle sur la vitesse de lecture (une des fonctionnalités que j&amp;rsquo;aime tout particulièrement).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Youtube sans pub ? #1</title>
+      <link>https://mtwabp.fr/posts/2023-08-12_youtube-sans-pub-/</link>
+      <pubDate>Sat, 12 Aug 2023 22:00:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/posts/2023-08-12_youtube-sans-pub-/</guid>
+      <description>&lt;p&gt;Je ne me l&amp;rsquo;explique pas : si vous utilisez un ordinateur avec Chrome OS Flex pour regarder des vidéos sur Youtube, vous aurez l&amp;rsquo;expérience Premium, c&amp;rsquo;est à dire sans publicité. Ni au début, ni pendant, ni à la fin de la vidéo.&lt;/p&gt;&#xA;&lt;p&gt;Je ne sais pas si c&amp;rsquo;est ma configuration qui est trop bizarre pour l&amp;rsquo;algorithme de Google ou bien si c&amp;rsquo;est une limitation/bug du viewer Youtube de Chrome OS Flex.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

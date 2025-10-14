@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hobby on Philippe-Anselme logs</title>
+    <link>https://mtwabp.fr/tags/hobby/</link>
+    <description>Recent content in Hobby on Philippe-Anselme logs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Philippe-Anselme Foury</copyright>
+    <lastBuildDate>Wed, 25 May 2016 13:28:59 -0500</lastBuildDate>
+    <atom:link href="https://mtwabp.fr/tags/hobby/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projet Wagon-Louffe</title>
+      <link>https://mtwabp.fr/posts/2016-05-25_site-wagon-louffe/</link>
+      <pubDate>Wed, 25 May 2016 13:28:59 -0500</pubDate>
+      <guid>https://mtwabp.fr/posts/2016-05-25_site-wagon-louffe/</guid>
+      <description>&lt;p&gt;Mes amis aiment bien faire des vidéos lorsqu&amp;rsquo;ils sont en vacances.&lt;/p&gt;&#xA;&lt;p&gt;De mon côté j&amp;rsquo;aime bien mettre en avant leurs initiatives. Alors j&amp;rsquo;ai repensé la communication autour de leur projet en mettant une pointe d&amp;rsquo;imagination.&lt;/p&gt;&#xA;&lt;p&gt;Le résultat est disponible &lt;a href=&#34;https://wagon-louffe.fr&#34;&gt;ici&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Le site est auto-hébergé et dispose d&amp;rsquo;un certificat Let&amp;rsquo;s Encrypt pour toujours plus de sécurité.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

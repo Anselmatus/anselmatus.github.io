@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technologie on Philippe-Anselme logs</title>
+    <link>https://mtwabp.fr/tags/technologie/</link>
+    <description>Recent content in Technologie on Philippe-Anselme logs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Philippe-Anselme Foury</copyright>
+    <lastBuildDate>Sat, 16 Nov 2024 23:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mtwabp.fr/tags/technologie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuration HK Aura</title>
+      <link>https://mtwabp.fr/posts/2024-11-16_configuration-hk-aura/</link>
+      <pubDate>Sat, 16 Nov 2024 23:00:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/posts/2024-11-16_configuration-hk-aura/</guid>
+      <description>&lt;p&gt;HK n&amp;rsquo;a pas encore supprimé de son site sa &amp;ldquo;super&amp;rdquo; documentation pour la maintenance de leurs équipements. J&amp;rsquo;en ai fait une copie &lt;a href=&#34;https://mtwabp-v2.s3.fr-par.scw.cloud/divers/Harman%20Kardon%20AURA%20Wifi%20setup..pdf&#34;&gt;ici&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Mais la réalité est différente. Mon enceinte s&amp;rsquo;est déconnectée de mon réseau wifi. Impossible de passer par l&amp;rsquo;application iOS qui n&amp;rsquo;a pas été mise à jour depuis longtemps : l&amp;rsquo;interface ne permet pas de mettre le mot de passe du réseau wifi que l&amp;rsquo;on veut utiliser. Dommage.&lt;/p&gt;&#xA;&lt;p&gt;Je tente d&amp;rsquo;utiliser la connexion &amp;ldquo;ad-hoc&amp;rdquo;. Bizarrement, bien que je suive les instructions à la lettre, impossible de voir le fameux réseau wifi ad-hoc de l&amp;rsquo;enceinte. Heureusement, en prenant mon téléphone Android, le réseau wifi apparaît ! Je parviens à rejoindre le 192.168.1.1 et voir l&amp;rsquo;interface de gestion wifi de l&amp;rsquo;enceinte. Je change la configuration, j&amp;rsquo;attends une trentaine de seconde et&amp;hellip; Tada ! Mon enceinte est à nouveau sur mon réseau wifi :D&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

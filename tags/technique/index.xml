@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technique on Philippe-Anselme logs</title>
+    <link>https://mtwabp.fr/tags/technique/</link>
+    <description>Recent content in Technique on Philippe-Anselme logs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Philippe-Anselme Foury</copyright>
+    <lastBuildDate>Sun, 09 Jun 2024 22:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mtwabp.fr/tags/technique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technique de barbecue</title>
+      <link>https://mtwabp.fr/posts/2024-06-09_technique-de-barbecue/</link>
+      <pubDate>Sun, 09 Jun 2024 22:00:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/posts/2024-06-09_technique-de-barbecue/</guid>
+      <description>&lt;p&gt;La saison des barbecues va bientôt redémarré et j&amp;rsquo;en profite pour vous partager une technique de &amp;ldquo;citadin&amp;rdquo; pour simplifier le démarrage de vos barbecues.&lt;/p&gt;&#xA;&lt;p&gt;Plutôt que de vous embêter à prendre un calendrier pour &amp;ldquo;soufler&amp;rdquo; sur les flammes, je vous recommande d&amp;rsquo;y aller all-in et prendre votre sèche cheveux pour vous simplifier la vie.&lt;/p&gt;&#xA;&lt;p&gt;Testé et validé !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Youtube sans pub ? #2</title>
+      <link>https://mtwabp.fr/posts/2023-09-26_youtube-sans-pub--2/</link>
+      <pubDate>Tue, 26 Sep 2023 22:00:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/posts/2023-09-26_youtube-sans-pub--2/</guid>
+      <description>&lt;p&gt;Nouvelle technique pour regarder des vidéos Youtube sans pub : j&amp;rsquo;utilise maintenant le lecteur Youtube de l&amp;rsquo;application Telegram.&lt;/p&gt;&#xA;&lt;p&gt;Plutôt que mettre les vidéos que je souhaite voir dans &amp;ldquo;A regarder plus tard&amp;rdquo; de Youtube, je les partage sur dans la chaîne Telegram &amp;ldquo;Messages enregistrés&amp;rdquo;, et ensuite je les regarde depuis Telegram.&lt;/p&gt;&#xA;&lt;p&gt;Le lecteur intégré de Telegram permet même d&amp;rsquo;avoir le contrôle sur la vitesse de lecture (une des fonctionnalités que j&amp;rsquo;aime tout particulièrement).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Youtube sans pub ? #1</title>
+      <link>https://mtwabp.fr/posts/2023-08-12_youtube-sans-pub-/</link>
+      <pubDate>Sat, 12 Aug 2023 22:00:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/posts/2023-08-12_youtube-sans-pub-/</guid>
+      <description>&lt;p&gt;Je ne me l&amp;rsquo;explique pas : si vous utilisez un ordinateur avec Chrome OS Flex pour regarder des vidéos sur Youtube, vous aurez l&amp;rsquo;expérience Premium, c&amp;rsquo;est à dire sans publicité. Ni au début, ni pendant, ni à la fin de la vidéo.&lt;/p&gt;&#xA;&lt;p&gt;Je ne sais pas si c&amp;rsquo;est ma configuration qui est trop bizarre pour l&amp;rsquo;algorithme de Google ou bien si c&amp;rsquo;est une limitation/bug du viewer Youtube de Chrome OS Flex.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
