@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2nd-Degré on Philippe-Anselme logs</title>
-    <link>http://localhost:1313/tags/2nd-degr%C3%A9/</link>
+    <link>https://mtwabp.fr/tags/2nd-degr%C3%A9/</link>
     <description>Recent content in 2nd-Degré on Philippe-Anselme logs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Philippe-Anselme Foury</copyright>
     <lastBuildDate>Wed, 19 Apr 2023 22:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/2nd-degr%C3%A9/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mtwabp.fr/tags/2nd-degr%C3%A9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Faire des saignées feat. EFS</title>
-      <link>http://localhost:1313/posts/faire-des-saignees/</link>
+      <link>https://mtwabp.fr/posts/2023-04-19_faire-des-saignees/</link>
       <pubDate>Wed, 19 Apr 2023 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/faire-des-saignees/</guid>
-      <description></description>
+      <guid>https://mtwabp.fr/posts/2023-04-19_faire-des-saignees/</guid>
+      <description>&lt;p&gt;Un article de plus pour le tag #santé ! Cette fois on s&amp;rsquo;attarde sur quelque chose que je fais maintenant depuis plusieurs années : donner mon sang à l&amp;rsquo;EFS.&lt;/p&gt;&#xA;&lt;p&gt;Secrètement, mon objectif est d&amp;rsquo;atteindre le nombre de 100 dons de sang au total, mais il y a encore du chemin, d&amp;rsquo;autant que deux dons doivent être espacés de 8 semaines minimum.&lt;/p&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai pris goût à donner mon sang. D&amp;rsquo;autant que ça se passe plutôt bien en général. Je trouve qu&amp;rsquo;il y a un côté médiéval à la chose : un genre de remède ancien, comme les saignées de l&amp;rsquo;époque.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
