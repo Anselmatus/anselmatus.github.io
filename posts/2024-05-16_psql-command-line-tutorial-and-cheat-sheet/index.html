@@ -29,8 +29,8 @@ This is both a brief tutorial and a quick reference for the absolute least you n
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://mtwabp.fr/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
-		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://mtwabp.fr/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"  disabled /><link rel="stylesheet" href="https://mtwabp.fr/katex/katex.min.css ">
+	<link rel="stylesheet" type="text/css" media="screen" href="https://mtwabp.fr/css/main.a87126a5d38398207e58225b2d1a9faf97f546982f44b3ffb9715a264da36c90.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://mtwabp.fr/css/dark.f163b79c6de51d14a766ff9f0563053de7f06a4d1bf7b85a59608bf96e566710.css"  disabled /><link rel="stylesheet" href="https://mtwabp.fr/katex/katex.min.css ">
 		<script defer src="https://mtwabp.fr/katex/katex.min.js"></script>
 		<script defer src="https://mtwabp.fr/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 		
@@ -60,9 +60,17 @@ This is both a brief tutorial and a quick reference for the absolute least you n
 		
 		<a href="/tags">Tags</a>
 		
-		| <span id="dark-mode-toggle" onclick="toggleTheme()"><svg class="feather">
-   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#sun" />
-</svg></span>
+		<button id="dark-mode-toggle" class="nav-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" type="button"><svg class="feather" viewBox="0 0 24 24" fill="none" stroke="#232333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg></button>
 		<script src="https://mtwabp.fr/js/themetoggle.js"></script>
 		
 	</nav>
@@ -194,10 +202,10 @@ It covers the most common operations and shows them roughly in sequence, as you&
 <p>The <code>$</code> starting a command line in the examples below represents your operating system prompt.
 Prompts are configurable so it may well not look like this.
 On Windows it might look like <code>C:\Program Files\PostgreSQL&gt;</code> but Windows prompts are also configurable.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ psql -U sampleuser -h localhost
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ psql -U sampleuser -h localhost
 </span></span></code></pre></div><p>A line starting with <code>#</code> represents a comment. Same for everything to the right of a <code>#</code>.
 If you accidentally type it or copy and paste it in, don&rsquo;t worry. Nothing will happen.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>This worked to connect to Postgres on DigitalOcean
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>This worked to connect to Postgres on DigitalOcean
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># -U is the username (it will appear in the \l command)</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># -h is the name of the machine where the server is running.</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># -p is the port where the database listens to connections. Default is 5432.</span>
@@ -212,19 +220,19 @@ If you accidentally type it or copy and paste it in, don&rsquo;t worry. Nothing 
 <h3 id="quitting-pqsql">Quitting pqsql</h3>
 <p>Before we learn anything else, here&rsquo;s how to quit <code>psql</code> and return to the operating system prompt.
 You type backslash, the letter <code>q</code>, and then you press the Enter or return key.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># Press enter after typing \q
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># Press enter after typing \q
 </span></span><span style="display:flex;"><span># Remember this is backslash, not forward slash
 </span></span><span style="display:flex;"><span>postgres=# \q
 </span></span></code></pre></div><p>This takes you back out to the operating system prompt.</p>
 <h3 id="opening-a-connection-locally">Opening a connection locally</h3>
 <p>A common case during development is opening a connection to a local database (one on your own machine).
 Run <code>psql</code> with <code>-U</code> (for user name) followed by the name of the database, <code>postgres</code> in this example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># Log into Postgres as the user named postgres
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># Log into Postgres as the user named postgres
 </span></span><span style="display:flex;"><span>$ psql -U postgres
 </span></span></code></pre></div><h3 id="opening-a-connection-remotely">Opening a connection remotely</h3>
 <p>To connect your remote PostgreSQL instance from your local machine, use <code>psql</code> at your operating system command line.
 Here&rsquo;s a typical connection.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># -U is the username (it will appear in the \l command)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># -U is the username (it will appear in the \l command)</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># -h is the name of the machine where the server is running.</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># -p is the port where the database listens to connections. Default is 5432.</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># -d is the name of the database to connect to. I think DO generated this for me, or maybe PostgreSQL.</span>
@@ -233,7 +241,7 @@ Here&rsquo;s a typical connection.</p>
 <h3 id="looking-at-the-psql-prompt">Looking at the psql prompt</h3>
 <p>A few things appear, then the <code>psql</code> prompt is displayed.
 The name of the current database appears before the prompt.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>psql (11.1, server 11.0)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>psql (11.1, server 11.0)
 </span></span><span style="display:flex;"><span>Type &#34;help&#34; for help.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>postgres=# 
@@ -246,13 +254,13 @@ The name of the current database appears before the prompt.</p>
 <ul>
 <li>For example,suppose you want to remove a table named <code>sample_property_5</code>. You&rsquo;d enter this command:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>postgres=# DROP TABLE &#34;sample_property_5&#34;;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>postgres=# DROP TABLE &#34;sample_property_5&#34;;
 </span></span></code></pre></div><p>It&rsquo;s easy to forget. If you do forget the semicolon, you&rsquo;ll see this perplexing prompt.
 Note that a <code>[</code> has been inserted before the username portion of the prompt, and another prompt appears below it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[postgres=# DROP TABLE &#34;sample_property_5&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[postgres=# DROP TABLE &#34;sample_property_5&#34;
 </span></span><span style="display:flex;"><span>postgres=#
 </span></span></code></pre></div><p>When you do, just remember to finish it off with that semicolon:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[postgres=# DROP TABLE &#34;sample_property_5&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[postgres=# DROP TABLE &#34;sample_property_5&#34;
 </span></span><span style="display:flex;"><span>postgres=# ;
 </span></span></code></pre></div><h3 id="scrolling-through-the-command-history">Scrolling through the command history</h3>
 <ul>
@@ -265,10 +273,10 @@ Note that a <code>[</code> has been inserted before the username portion of the 
 <li>If you want to halt the output, press <code>q</code>.</li>
 </ul>
 <h3 id="h-help">\h Help</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># Get help. Note it&#39;s a backslash, not a forward slash.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># Get help. Note it&#39;s a backslash, not a forward slash.
 </span></span><span style="display:flex;"><span>postgres=# \h
 </span></span></code></pre></div><p>You&rsquo;ll get a long list of commands, then output is paused:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Available help:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Available help:
 </span></span><span style="display:flex;"><span>  ABORT                            CREATE USER
 </span></span><span style="display:flex;"><span>  ...
 </span></span><span style="display:flex;"><span>  ALTER AGGREGATE                  CREATE USER MAPPING
@@ -281,16 +289,16 @@ Note that a <code>[</code> has been inserted before the username portion of the 
 <ul>
 <li>For example, to get help on <code>DROP TABLE</code>:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \h drop table
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \h drop table
 </span></span></code></pre></div><p>You&rsquo;ll get help on just that item:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Command:     DROP TABLE
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>Command:     DROP TABLE
 </span></span><span style="display:flex;"><span>Description: remove a table
 </span></span><span style="display:flex;"><span>Syntax:
 </span></span><span style="display:flex;"><span>DROP TABLE [ IF EXISTS ] name [, ...] [ CASCADE | RESTRICT ]
 </span></span></code></pre></div><h3 id="l-list-databases">\l List databases</h3>
 <p>What most people think of as a database (say, a list of customers) is actually a table. A database is a set of tables, information about those tables, information about users and their permissions, and much more. Some of these databases (and the tables within) are updated automatically by PostgreSQL as you use them.</p>
 <p>To get a list of all databases:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \l
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \l
 </span></span><span style="display:flex;"><span>                                  List of databases
 </span></span><span style="display:flex;"><span>   Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
 </span></span><span style="display:flex;"><span>-----------+----------+----------+-------------+-------------+-----------------------
@@ -306,9 +314,9 @@ Note that a <code>[</code> has been inserted before the username portion of the 
 <ul>
 <li>For example, to view information about the <code>template0</code> database:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \l template0
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \l template0
 </span></span></code></pre></div><p>The output would be:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \l
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \l
 </span></span><span style="display:flex;"><span>                                  List of databases
 </span></span><span style="display:flex;"><span>   Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
 </span></span><span style="display:flex;"><span>-----------+----------+----------+-------------+-------------+-----------------------
@@ -317,7 +325,7 @@ Note that a <code>[</code> has been inserted before the username portion of the 
 </span></span></code></pre></div><h3 id="l-list-databases-with-size-tablespace-and-description">\l+ List databases with size, tablespace, and description</h3>
 <p>To get additional information on the space consumed by database tables
 and comments describing those tables, use <code>\l+</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \l+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \l+
 </span></span></code></pre></div><h3 id="x-expandnarrow-table-lists">\x Expand/narrow table lists</h3>
 <p>Use <code>\x</code> (X for eXpanded listing) to control
 whether table listings use a wide or narrow format.</p>
@@ -348,7 +356,7 @@ whether table listings use a wide or narrow format.</p>
   </tbody>
 </table>
 <p><strong>Example:</strong> Here&rsquo;s an expanded listing:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>/* List all databases. */
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>/* List all databases. */
 </span></span><span style="display:flex;"><span>postgres=# \l
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                                  List of databases
@@ -364,7 +372,7 @@ whether table listings use a wide or narrow format.</p>
 </span></span><span style="display:flex;"><span> tom       | tom      | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
 </span></span><span style="display:flex;"><span>(6 rows)
 </span></span></code></pre></div><p>Use <code>\x on</code> for narrower listings:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>/* Turn on narrow listings. */
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>/* Turn on narrow listings. */
 </span></span><span style="display:flex;"><span>postgres=# \x on
 </span></span><span style="display:flex;"><span>postgres=# \l
 </span></span><span style="display:flex;"><span>
@@ -394,7 +402,7 @@ whether table listings use a wide or narrow format.</p>
 <p>To see what&rsquo;s inside a database, connect to it using <code>\c</code> followed by the database name.
 The prompt changes to match the name of the database you&rsquo;re connecting to.
 (The one named <code>postgres</code> is always interesting.) Here we&rsquo;re connecting to the one named <code>markets</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \c markets
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \c markets
 </span></span><span style="display:flex;"><span>psql (11.1, server 11.0)
 </span></span><span style="display:flex;"><span>You are now connected to database &#34;markets&#34; as user &#34;tom&#34;.
 </span></span><span style="display:flex;"><span>markets=# 
@@ -402,7 +410,7 @@ The prompt changes to match the name of the database you&rsquo;re connecting to.
 <ul>
 <li>Use <code>\dt</code> to list all the tables (technically, <em>relations</em>) in the database:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>markets=# \dt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>markets=# \dt
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                    List of relations
 </span></span><span style="display:flex;"><span> Schema |             Name             | Type  |  Owner   
@@ -422,7 +430,7 @@ Remember you can pause output by pressing space or halt it by pressing <code>q</
 <ul>
 <li>To view the schema of a table named <code>customerpaymentsummary</code>, enter</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>markets=# \d customerpaymentsummary
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>markets=# \d customerpaymentsummary
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                            Table &#34;public.customerpaymentsummary&#34;
 </span></span><span style="display:flex;"><span>            Column            |            Type             | Collation | Nullable | Default 
@@ -437,7 +445,7 @@ Remember you can pause output by pressing space or halt it by pressing <code>q</
 </span></span><span style="display:flex;"><span> updatewhen1                  | timestamp without time zone |           |          |        
 </span></span><span style="display:flex;"><span> updatewhen2                  | timestamp without time zone |           |          |        
 </span></span></code></pre></div><p>To view more detailed information on a table, use <code>\d+</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>markets=# \d customerpaymentsummary
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>markets=# \d customerpaymentsummary
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>                            Table &#34;public.customerpaymentsummary&#34;
 </span></span><span style="display:flex;"><span>            Column            |            Type             | Collation | Nullable | Default | Storage | Stats target |
@@ -457,7 +465,7 @@ Remember you can pause output by pressing space or halt it by pressing <code>q</
 <ul>
 <li>To view all users and their roles, use <code>\du</code>:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \du
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \du
 </span></span><span style="display:flex;"><span>                                    List of roles
 </span></span><span style="display:flex;"><span> Role name  |                         Attributes                         | Member of 
 </span></span><span style="display:flex;"><span>------------+------------------------------------------------------------+-----------
@@ -468,7 +476,7 @@ Remember you can pause output by pressing space or halt it by pressing <code>q</
 <li>To view the role of a specific user, pass it after the <code>\du</code> command.
 For example, to see the only <code>tom</code> role:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \du tom
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# \du tom
 </span></span><span style="display:flex;"><span>                                    List of roles
 </span></span><span style="display:flex;"><span> Role name  |                         Attributes                         | Member of 
 </span></span><span style="display:flex;"><span>------------+------------------------------------------------------------+-----------
@@ -476,25 +484,25 @@ For example, to see the only <code>tom</code> role:</li>
 </span></span></code></pre></div><h2 id="creating-a-database">Creating a database</h2>
 <p>Before you add tables, you need to create a database to contain those tables.
 That&rsquo;s not done with <code>psql</code>, but instead it&rsquo;s done with <code>createdb</code> (a separate external command; see the PostgreSQL <a href="https://www.postgresql.org/docs/current/app-createdb.html">createdb</a> documentation) at the operating system command line:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Replace markets with your database name</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Replace markets with your database name</span>
 </span></span><span style="display:flex;"><span>$ createdb markets
 </span></span></code></pre></div><p>On success, there is no visual feedback. Thanks, PostgreSQL.</p>
 <h2 id="adding-tables-and-records">Adding tables and records</h2>
 <h3 id="creating-a-table-create-table">Creating a table (CREATE TABLE)</h3>
 <p>To add a table schema to the database:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>postgres<span style="color:#f92672">=#</span> <span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">exists</span> product (
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>postgres<span style="color:#f92672">=#</span> <span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">exists</span> product (
 </span></span><span style="display:flex;"><span>  id              SERIAL,
 </span></span><span style="display:flex;"><span>  name            VARCHAR(<span style="color:#ae81ff">100</span>) <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
 </span></span><span style="display:flex;"><span>  sku             CHAR(<span style="color:#ae81ff">8</span>)
 </span></span><span style="display:flex;"><span>);
 </span></span></code></pre></div><p>And <code>psql</code> responds with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span>
 </span></span></code></pre></div><p>For more see  <code>CREATE TABLE</code> in the <a href="https://www.postgresql.org/docs/10/sql-createtable.html">PostgreSQL official docs</a>.</p>
 <h3 id="adding-a-record-insert-into">Adding a record (INSERT INTO)</h3>
 <ul>
 <li>Here&rsquo;s how to add a record, populating every field:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># The id field is an automatically assigned</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># The id field is an automatically assigned</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># when you use DEFAULT. The serial primary key means</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># that number will be increased by at least</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 1 and assigned to that same field when</span>
@@ -503,17 +511,17 @@ That&rsquo;s not done with <code>psql</code>, but instead it&rsquo;s done with <
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># In its place PostgreSQL automatically generates a unique integer for it.</span>
 </span></span><span style="display:flex;"><span>postgres<span style="color:#f92672">=</span><span style="color:#75715e"># INSERT INTO product VALUES(DEFAULT, &#39;Apple, Fuji&#39;, &#39;4131&#39;);</span>
 </span></span></code></pre></div><p>PostgreSQL responds with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span>
 </span></span></code></pre></div><ul>
 <li>Try it again and you get a simliar response.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>postgres<span style="color:#f92672">=#</span> <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> product <span style="color:#66d9ef">VALUES</span>(<span style="color:#66d9ef">DEFAULT</span>, <span style="color:#e6db74">&#39;Banana&#39;</span>, <span style="color:#e6db74">&#39;4011&#39;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>postgres<span style="color:#f92672">=#</span> <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> product <span style="color:#66d9ef">VALUES</span>(<span style="color:#66d9ef">DEFAULT</span>, <span style="color:#e6db74">&#39;Banana&#39;</span>, <span style="color:#e6db74">&#39;4011&#39;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span>
 </span></span></code></pre></div><h3 id="adding-inserting-several-records-at-once">Adding (inserting) several records at once</h3>
 <ul>
 <li>You can enter a list of records using this syntax:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>postgres=# INSERT INTO product VALUES
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>postgres=# INSERT INTO product VALUES
 </span></span><span style="display:flex;"><span>(DEFAULT, &#39;Carrots&#39;, 4562),
 </span></span><span style="display:flex;"><span>(DEFAULT, &#39;Durian&#39;, 5228)
 </span></span><span style="display:flex;"><span>;
@@ -521,12 +529,12 @@ That&rsquo;s not done with <code>psql</code>, but instead it&rsquo;s done with <
 <p>You can add records but specify only selected fields (also known as columns). MySQL will use common sense default values for the rest.</p>
 <p>In this example, only the <code>name</code> field will be populated. The <code>sku</code> column is left blank, and the <code>id</code> column is incremented and inserted.</p>
 <p>Two records are added:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>postgres<span style="color:#f92672">=#</span> <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> product (name) <span style="color:#66d9ef">VALUES</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>postgres<span style="color:#f92672">=#</span> <span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> product (name) <span style="color:#66d9ef">VALUES</span>
 </span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#39;Endive&#39;</span>),
 </span></span><span style="display:flex;"><span>(<span style="color:#e6db74">&#39;Figs&#39;</span>)
 </span></span><span style="display:flex;"><span>;
 </span></span></code></pre></div><p>PostgreSQL responds with the number of records inserted:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>INSERT 0 2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>INSERT 0 2
 </span></span></code></pre></div><p>For more on INSERT, see <code>INSERT</code> in the <a href="https://www.postgresql.org/docs/current/sql-insert.html">PostgreSQL official docs</a></p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h3 id="doing-a-simple-queryget-a-list-of-records-select">Doing a simple query&ndash;get a list of records (SELECT)</h3>
@@ -535,9 +543,9 @@ with the <code>SELECT</code> statement. It&rsquo;s a <a href="https://www.postgr
 <ul>
 <li>Let&rsquo;s list all the records in the <code>product</code> table:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>postgres<span style="color:#f92672">=#</span> <span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> product;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>postgres<span style="color:#f92672">=#</span> <span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> product;
 </span></span></code></pre></div><p>The response:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# select * from product;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>postgres=# select * from product;
 </span></span><span style="display:flex;"><span> id |    name     |   sku    
 </span></span><span style="display:flex;"><span>----+-------------+----------
 </span></span><span style="display:flex;"><span>  1 | Apple, Fuji | 4131    
@@ -546,7 +554,7 @@ with the <code>SELECT</code> statement. It&rsquo;s a <a href="https://www.postgr
 </span></span></code></pre></div><h4 id="note">Note</h4>
 <p>If your table has mixed case objects such as column names or indexes, you&rsquo;ll need to enclose them in double quotes.
 For example, If a column name were <code>Product</code> instead of <code>product</code> your query would need to look like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> <span style="color:#e6db74">&#34;product&#34;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> <span style="color:#e6db74">&#34;product&#34;</span>;
 </span></span></code></pre></div><p>For more on SELECT, see the <code>SELECT</code> in the <a href="https://www.postgresql.org/docs/current/sql-select.html">PostgreSQL official docs</a>.</p>
 <p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <h2 id="maintenance-and-operations-issues">Maintenance and operations issues</h2>
@@ -577,7 +585,7 @@ For example, If a column name were <code>Product</code> instead of <code>product
   </tbody>
 </table>
 <h3 id="example-of-t-timing-command">Example of \t Timing command</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>tom=# insert into todo values (&#39;Retry on Android before app submission,&#39;8.x and earlier&#39;);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>tom=# insert into todo values (&#39;Retry on Android before app submission,&#39;8.x and earlier&#39;);
 </span></span><span style="display:flex;"><span>INSERT 0 1
 </span></span><span style="display:flex;"><span>tom=# \timing on
 </span></span><span style="display:flex;"><span>Timing is on.
@@ -594,7 +602,7 @@ For example, If a column name were <code>Product</code> instead of <code>product
 To use it, enter the SQL command you want repeated, then use <code>\watch</code> followed by the number of seconds you want for the interval between repeats, for rexample, <code>\watch 1</code> to repeat it every second.</p>
 <h3 id="example-of-the-watch-command">Example of the \Watch command</h3>
 <p>Here&rsquo;s an example of using <code>\watch</code> to see if any records have been inserted within the last 5 seconds.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>tom=# select count(*);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>tom=# select count(*);
 </span></span><span style="display:flex;"><span>  count 
 </span></span><span style="display:flex;"><span>--------
 </span></span><span style="display:flex;"><span>    726
@@ -623,12 +631,12 @@ To use it, enter the SQL command you want repeated, then use <code>\watch</code>
 </span></span><span style="display:flex;"><span>(726 rows)
 </span></span></code></pre></div><h3 id="locate-the-pg_hbaconf-file">Locate the pg_hba.conf file</h3>
 <p>Postgres configuration is stored in a file named <code>pg_hba.conf</code> <em>somewhere</em> in the file system, but that location varies widely. The way to find it is to use <code>show  hba_file</code> like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">show</span>  hba_file;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">show</span>  hba_file;
 </span></span></code></pre></div><p>See below for hot reloading this file while Postgres is running.</p>
 <h3 id="reload-the-configuration-file-while-postgres-is-running">Reload the configuration file while Postgres is running</h3>
 <p>If you make changes to the <code>pg_hba.conf</code> Postgres configuration sometimes you need to restart.
 But you may just choose to reload the <code>pg_hba.conf</code> configuration file like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> pg_reload_conf();
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> pg_reload_conf();
 </span></span></code></pre></div><h2 id="reference">Reference</h2>
 <ul>
 <li>PostgreSQL offical docs: <a href="https://www.postgresql.org/docs/current/admin.html">Server Administration</a></li>
@@ -645,11 +653,11 @@ But you may just choose to reload the <code>pg_hba.conf</code> configuration fil
           <nav class="nav tags">
             <ul class="tags">
               
-              <li><a href="/tags/postgres">postgres</a></li>
+              <li><a href="/tags/postgres/">postgres</a></li>
               
-              <li><a href="/tags/databases">databases</a></li>
+              <li><a href="/tags/databases/">databases</a></li>
               
-              <li><a href="/tags/cheatsheet">cheatsheet</a></li>
+              <li><a href="/tags/cheatsheet/">cheatsheet</a></li>
               
             </ul>
           </nav>
@@ -666,14 +674,14 @@ But you may just choose to reload the <code>pg_hba.conf</code> configuration fil
 </main>
 <footer>
   <div style="display:flex"><a class="soc" href="https://github.com/Anselmatus" rel="me" title="GitHub"><svg class="feather">
-   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#github" />
-</svg></a><a class="border"></a><a class="soc" href="https://twitter.com/pafoury/" rel="me" title="Twitter"><svg class="feather">
-   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#twitter" />
-</svg></a><a class="border"></a><a class="soc" href="https://linkedin.com/in/pafoury" rel="me" title="Linkedin"><svg class="feather">
-   <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#linkedin" />
-</svg></a><a class="border"></a></div>
+       <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#github" />
+    </svg></a><a class="border"></a><a class="soc" href="https://twitter.com/pafoury/" rel="me" title="Twitter"><svg class="feather">
+       <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#twitter" />
+    </svg></a><a class="border"></a><a class="soc" href="https://linkedin.com/in/pafoury" rel="me" title="Linkedin"><svg class="feather">
+       <use href="/svg/feather-sprite.51cf5647cb1987f769b616558f2620fd9423d72058490231b391bf6aa3744b55.svg#linkedin" />
+    </svg></a><a class="border"></a></div>
   <div class="footer-info">
-    2025  © Philippe-Anselme Foury |  <a
+    2026  © Philippe-Anselme Foury |  <a
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
   </div>
 </footer>
@@ -682,7 +690,7 @@ But you may just choose to reload the <code>pg_hba.conf</code> configuration fil
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-17S5C5YHKN"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
