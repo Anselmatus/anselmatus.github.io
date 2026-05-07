@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT on Philippe-Anselme logs</title>
+    <link>https://mtwabp.fr/tags/it/</link>
+    <description>Recent content in IT on Philippe-Anselme logs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© Philippe-Anselme Foury</copyright>
+    <lastBuildDate>Thu, 07 May 2026 08:12:00 +0000</lastBuildDate>
+    <atom:link href="https://mtwabp.fr/tags/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash redirects cheat sheet</title>
+      <link>https://mtwabp.fr/posts/2026-05-07_bash-redirect/</link>
+      <pubDate>Thu, 07 May 2026 08:12:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/posts/2026-05-07_bash-redirect/</guid>
+      <description>&lt;p&gt;Without further introduction.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;# écrire dans un fichier attention créé ou écrase un fichier déjà existant&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt;&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;# ajouter à la fin d’un fichier&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;# rediriger les erreurs (ou 2&amp;gt;&amp;gt;), la sortie standard reste l&amp;#39;écran ou le terminal&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2&amp;gt;&amp;amp;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# rediriger les erreurs dans stdout (on peut aussi utiliser &amp;amp;&amp;gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt;/dev/null &lt;span style=&#34;color:#75715e&#34;&gt;# pour tout envoyer dans /dev/null&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;Standard IN: stdin&lt;/li&gt;&#xA;&lt;li&gt;Standard OUT: stout&lt;/li&gt;&#xA;&lt;li&gt;Standard ERROR: stderr&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

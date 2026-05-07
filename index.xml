@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Philippe-Anselme Foury</copyright>
-    <lastBuildDate>Wed, 28 Jan 2026 22:12:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 08:12:00 +0000</lastBuildDate>
     <atom:link href="https://mtwabp.fr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash redirects cheat sheet</title>
+      <link>https://mtwabp.fr/posts/2026-05-07_bash-redirect/</link>
+      <pubDate>Thu, 07 May 2026 08:12:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/posts/2026-05-07_bash-redirect/</guid>
+      <description>&lt;p&gt;Without further introduction.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;# écrire dans un fichier attention créé ou écrase un fichier déjà existant&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt;&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;# ajouter à la fin d’un fichier&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2&amp;gt; &lt;span style=&#34;color:#75715e&#34;&gt;# rediriger les erreurs (ou 2&amp;gt;&amp;gt;), la sortie standard reste l&amp;#39;écran ou le terminal&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2&amp;gt;&amp;amp;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# rediriger les erreurs dans stdout (on peut aussi utiliser &amp;amp;&amp;gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt;/dev/null &lt;span style=&#34;color:#75715e&#34;&gt;# pour tout envoyer dans /dev/null&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;Standard IN: stdin&lt;/li&gt;&#xA;&lt;li&gt;Standard OUT: stout&lt;/li&gt;&#xA;&lt;li&gt;Standard ERROR: stderr&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>GROW</title>
+      <link>https://mtwabp.fr/posts/2026-04-23_grow_framework/</link>
+      <pubDate>Thu, 23 Apr 2026 21:02:32 +0000</pubDate>
+      <guid>https://mtwabp.fr/posts/2026-04-23_grow_framework/</guid>
+      <description>&lt;p&gt;Management. Leadership. Coaching.&lt;/p&gt;&#xA;&lt;h2 id=&#34;framework&#34;&gt;Framework&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;G&lt;/strong&gt;oal to achieve&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;R&lt;/strong&gt;eality to ground ourselves&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;O&lt;/strong&gt;ptions to stimulate creativity and choices&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;W&lt;/strong&gt;rap-up / will or way forward to ensure commitment to action and ownership&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;oxytocin-generators-for-building-trust&#34;&gt;Oxytocin Generators for Building Trust&lt;/h2&gt;&#xA;&lt;p&gt;Oxytocin, the &amp;ldquo;trust hormone,&amp;rdquo; can be stimulated to improve team relationships. Based on research by Paul Zak, here are key strategies:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Recognize Excellence&lt;/strong&gt;: Celebrate individual and team successes to boost feelings of value.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Induce &amp;lsquo;Challenge Stress&amp;rsquo;&lt;/strong&gt;: Present stimulating challenges (not overwhelming ones) to foster growth.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Give People Discretion&lt;/strong&gt;: Allow individuals to choose how they accomplish tasks to increase engagement.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Enable Job Crafting&lt;/strong&gt;: Encourage employees to adapt their roles to their strengths and interests.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Share Information Broadly&lt;/strong&gt;: Promote transparency to reduce uncertainty and build trust.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Intentionally Build Relationships&lt;/strong&gt;: Organize positive social interactions (e.g., virtual coffee chats, team-building activities).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Facilitate Whole-Person Growth&lt;/strong&gt;: Support personal development beyond work (e.g., training, wellness programs).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Show Vulnerability&lt;/strong&gt;: Share your own challenges to humanize interactions.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Exercice Kiné épaule épisode 2</title>
       <link>https://mtwabp.fr/posts/2026-01-28_exercice-kine-2/</link>
@@ -24,11 +38,11 @@
       <description>&lt;p&gt;J&amp;rsquo;apprends tardivement qu&amp;rsquo;il existe une façon « particulière » de lacer les chaussures de costume.&lt;/p&gt;&#xA;&lt;p&gt;Tout est expliqué sur ce site : &lt;a href=&#34;https://blog.jacquesdemeter.fr/comment-lacer-chaussres/&#34;&gt;https://blog.jacquesdemeter.fr/comment-lacer-chaussres/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;En particulier, le nœud Berluti améliore le classique double-nœud qui peut avoir tendance à se déplacer par rapport à la chaussure.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Lecture : Guide du parfait tricheur, Hippolyte Martin</title>
+      <title>Lecture: Guide du parfait tricheur, Hippolyte Martin</title>
       <link>https://mtwabp.fr/posts/2026-01-03_guide-du-parfait-tricheur/</link>
       <pubDate>Sat, 03 Jan 2026 11:43:00 +0000</pubDate>
       <guid>https://mtwabp.fr/posts/2026-01-03_guide-du-parfait-tricheur/</guid>
-      <description>&lt;p&gt;Nouveau résumé de lecture ! En vrac, ce que j&amp;rsquo;ai retenu :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Je ne triche pas, j&amp;rsquo;optimise le jeu&lt;/li&gt;&#xA;&lt;li&gt;Notre cerveau fait des calculs coût/bénéfice à longueur de journée&lt;/li&gt;&#xA;&lt;li&gt;L&amp;rsquo;image du perdant est difficile à porter, mais celle du tricheur encore plus&lt;/li&gt;&#xA;&lt;li&gt;Pour tricher efficacement, il faut venir bien habillé&lt;/li&gt;&#xA;&lt;li&gt;Tricherie dans le monde du travail : préservation et performance&lt;/li&gt;&#xA;&lt;li&gt;L’acceptation graduelle : la triche appelle la triche&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Le livre en question sur Amazon : &lt;a href=&#34;https://www.amazon.fr/dp/2013945981&#34;&gt;https://www.amazon.fr/dp/2013945981&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Nouveau résumé de lecture ! En vrac, ce que j&amp;rsquo;ai retenu :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Je ne triche pas j’optimise le jeu&lt;/li&gt;&#xA;&lt;li&gt;Notre cerveau fait des calcul coût/bénéfice à longueur de journée&lt;/li&gt;&#xA;&lt;li&gt;L’image du perdant est difficile à porter mais celle du tricheur encore plus&lt;/li&gt;&#xA;&lt;li&gt;Si on veut tricher, il faut venir bien habillé&lt;/li&gt;&#xA;&lt;li&gt;Tricherie dans le monde du travail : préservation et performance&lt;/li&gt;&#xA;&lt;li&gt;L’acceptation graduelle : la triche appelle la triche&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Le livre en question sur Amazon : &lt;a href=&#34;https://www.amazon.fr/dp/2013945981&#34;&gt;https://www.amazon.fr/dp/2013945981&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Parler une autre langue</title>

@@ -7,8 +7,36 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Philippe-Anselme Foury</copyright>
-    <lastBuildDate>Wed, 28 Jan 2026 22:12:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 08:12:00 +0000</lastBuildDate>
     <atom:link href="https://mtwabp.fr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash</title>
+      <link>https://mtwabp.fr/tags/bash/</link>
+      <pubDate>Thu, 07 May 2026 08:12:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/tags/bash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cheatsheet</title>
+      <link>https://mtwabp.fr/tags/cheatsheet/</link>
+      <pubDate>Thu, 07 May 2026 08:12:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/tags/cheatsheet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IT</title>
+      <link>https://mtwabp.fr/tags/it/</link>
+      <pubDate>Thu, 07 May 2026 08:12:00 +0000</pubDate>
+      <guid>https://mtwabp.fr/tags/it/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Management</title>
+      <link>https://mtwabp.fr/tags/management/</link>
+      <pubDate>Thu, 23 Apr 2026 21:02:32 +0000</pubDate>
+      <guid>https://mtwabp.fr/tags/management/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Santé</title>
       <link>https://mtwabp.fr/tags/sant%C3%A9/</link>
@@ -234,13 +262,6 @@
       <description></description>
     </item>
     <item>
-      <title>Cheatsheet</title>
-      <link>https://mtwabp.fr/tags/cheatsheet/</link>
-      <pubDate>Thu, 16 May 2024 22:00:00 +0000</pubDate>
-      <guid>https://mtwabp.fr/tags/cheatsheet/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Databases</title>
       <link>https://mtwabp.fr/tags/databases/</link>
       <pubDate>Thu, 16 May 2024 22:00:00 +0000</pubDate>
@@ -259,13 +280,6 @@
       <link>https://mtwabp.fr/tags/harvard/</link>
       <pubDate>Tue, 07 May 2024 22:00:00 +0000</pubDate>
       <guid>https://mtwabp.fr/tags/harvard/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Management</title>
-      <link>https://mtwabp.fr/tags/management/</link>
-      <pubDate>Tue, 07 May 2024 22:00:00 +0000</pubDate>
-      <guid>https://mtwabp.fr/tags/management/</guid>
       <description></description>
     </item>
     <item>
